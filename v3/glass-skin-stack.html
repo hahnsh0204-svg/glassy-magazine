@@ -1,0 +1,114 @@
+<!DOCTYPE html><html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Glass-Skin Stack, 2026 — Glassy</title><meta name="description" content="Every clinic in Gangnam is selling &quot;glass skin.&quot; Here&#x27;s the actual stack Seoul is running this year — and which layers travel.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&family=Libre+Caslon+Text:ital,wght@0,400;1,400&family=Marcellus&display=swap" rel="stylesheet">
+<style>
+:root{--cream:#faf6f0;--ink:#262635;--soft:#5a5a6a;--red:#c22e28;--navy:#2b3a67;--line:#e4ddd0;--r:4px}
+*{box-sizing:border-box}body{margin:0;background:var(--cream);color:var(--ink);font-family:"Libre Caslon Text",Georgia,serif;font-size:17px;line-height:1.6}
+a{color:inherit;text-decoration:none}.wrap{max-width:1080px;margin:0 auto;padding:0 24px}
+h1,h2,h3,.disp{font-family:"Playfair Display",Georgia,serif}
+.lbl,.nav a,.util a,.brandsub{font-family:"Marcellus",serif;letter-spacing:.14em;text-transform:uppercase}
+.util{border-bottom:1px solid var(--line)}.util .wrap{display:flex;align-items:center;gap:22px;height:46px;font-size:12px}
+.util a{color:var(--ink)}.util a.sub{color:var(--red)}.util .sp{flex:1}
+.mast{text-align:center;padding:22px 0 10px}
+.badge{display:inline-block;background:var(--red);color:var(--cream);font-family:"Marcellus";letter-spacing:.12em;text-transform:uppercase;font-size:22px;padding:12px 22px;border-radius:6px;position:relative}
+.nav2{display:flex;gap:26px;justify-content:center;padding:14px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);font-size:12px}
+.nav2 a:hover{color:var(--red)}
+.stripe{height:8px;background:repeating-linear-gradient(135deg,var(--red) 0 14px,#fff 14px 28px,var(--navy) 28px 42px,#fff 42px 56px)}
+.hero{display:grid;grid-template-columns:1.1fr 1fr;gap:36px;padding:34px 0;align-items:center}
+.ribbon{display:inline-block;background:var(--red);color:#fff;font-family:"Marcellus";letter-spacing:.12em;text-transform:uppercase;font-size:12px;padding:7px 26px;clip-path:polygon(8% 0,92% 0,100% 50%,92% 100%,8% 100%,0 50%);margin-bottom:16px}
+.hero h1{font-size:46px;line-height:1.06;font-weight:600;margin:0 0 14px}
+.hero .dek{font-size:19px;color:var(--soft);margin:0 0 16px;font-style:italic}
+.hero .by{font-family:"Marcellus";letter-spacing:.1em;text-transform:uppercase;font-size:12px;color:var(--soft)}
+.hero .im{height:400px;background:radial-gradient(circle at 40% 35%,#f0e6d6,#d8c8b0);border:1px solid var(--line)}
+.issue{font-family:"Marcellus";letter-spacing:.14em;text-transform:uppercase;font-size:12px;color:var(--red);text-align:right;margin-top:8px}
+.sec{padding:30px 0;border-top:1px solid var(--line)}
+.sh{font-family:"Marcellus";letter-spacing:.14em;text-transform:uppercase;font-size:13px;color:var(--navy);margin:0 0 18px;text-align:center;position:relative}
+.sh span{background:var(--cream);padding:0 16px;position:relative;z-index:1}.sh::before{content:"";position:absolute;left:0;right:0;top:50%;height:1px;background:var(--line)}
+.list{display:grid;grid-template-columns:repeat(3,1fr);gap:30px}
+.it .cat{font-family:"Marcellus";letter-spacing:.1em;text-transform:uppercase;font-size:11px;color:var(--red)}
+.it h3{font-size:22px;font-weight:600;line-height:1.15;margin:6px 0 8px}.it:hover h3{color:var(--red)}
+.it p{margin:0;font-size:14.5px;color:var(--soft)}
+.ad{border:1px solid var(--line);background:#fff;text-align:center;padding:26px;margin:26px 0}
+.ad .t{font-family:"Marcellus";letter-spacing:.2em;text-transform:uppercase;font-size:10px;color:var(--soft)}
+.ad .b{font-family:"Playfair Display";font-size:24px;margin:8px 0 4px}.ad .s{font-size:13px;color:var(--soft)}
+.member{background:var(--navy);color:#f2ede2;border-radius:6px;padding:40px;text-align:center;margin:30px 0}
+.member .rib{font-family:"Marcellus";letter-spacing:.16em;text-transform:uppercase;font-size:12px;color:#e9b949}
+.member h2{font-family:"Playfair Display";font-size:32px;margin:10px 0 8px;color:#fff}
+.member p{max-width:52ch;margin:0 auto 20px;color:#cdd3e0}
+.member .price{font-family:"Marcellus";letter-spacing:.1em;font-size:14px;margin-bottom:16px}
+.cap{display:flex;gap:10px;max-width:440px;margin:0 auto;flex-wrap:wrap;justify-content:center}
+.cap input{flex:1;min-width:200px;padding:13px 16px;border:1px solid #4a5680;background:#233156;color:#fff;font:inherit;border-radius:3px}
+.cap input::placeholder{color:#9aa6c4}
+.cap button{font-family:"Marcellus";letter-spacing:.1em;text-transform:uppercase;background:#e9b949;color:#23305a;border:0;padding:13px 24px;cursor:pointer;border-radius:3px;font-size:13px}
+.cap-ok{flex-basis:100%;color:#e9b949;font-family:"Marcellus";letter-spacing:.06em}
+.foot{border-top:8px solid;border-image:repeating-linear-gradient(135deg,var(--red) 0 14px,#fff 14px 28px,var(--navy) 28px 42px,#fff 42px 56px) 8;margin-top:20px}
+.foot .wrap{padding:30px 24px;font-size:13px;color:var(--soft);line-height:1.7}.foot .b{font-family:"Playfair Display";font-size:22px;color:var(--ink);display:block;margin-bottom:8px}
+.cbar{background:#23305a;color:#9aa6c4;font-size:12px;text-align:center;padding:9px}.cbar a{color:#e9b949}
+.art{max-width:720px;margin:30px auto;padding:0 24px}
+.art .cat{font-family:"Marcellus";letter-spacing:.14em;text-transform:uppercase;font-size:12px;color:var(--red)}
+.art h1{font-size:44px;font-weight:600;line-height:1.08;margin:12px 0 14px}
+.art .dek{font-size:20px;color:var(--soft);font-style:italic;margin:0 0 18px}
+.art .meta{font-family:"Marcellus";letter-spacing:.1em;text-transform:uppercase;font-size:12px;color:var(--soft);border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:12px 0;margin-bottom:24px}
+.prose{font-size:18px;line-height:1.8}.prose h2{font-family:"Playfair Display";font-size:27px;font-weight:600;margin:32px 0 10px}
+.prose h3{font-family:"Marcellus";letter-spacing:.06em;font-size:18px;margin:24px 0 8px}.prose strong{color:var(--ink)}
+.prose table{width:100%;border-collapse:collapse;margin:20px 0;font-size:15px}.prose th{background:#fff;text-align:left;font-family:"Marcellus";letter-spacing:.06em;font-size:12px;text-transform:uppercase}
+.prose th,.prose td{border:1px solid var(--line);padding:10px 12px}
+.disc{max-width:720px;margin:20px auto;padding:0 24px;color:var(--soft);font-size:12.5px}
+@media(max-width:820px){.hero,.list{grid-template-columns:1fr}}
+</style></head><body>
+<div class="util"><div class="wrap"><a class="sub" href="#member">Subscribe</a><span class="sp"></span><a>Sign In</a></div></div>
+<div class="mast"><a class="badge" href="./index.html">Glassy</a></div>
+<div class="stripe"></div>
+<article class="art"><div class="cat">Trend Radar</div><h1>The Glass-Skin Stack, 2026</h1>
+<p class="dek">Every clinic in Gangnam is selling &quot;glass skin.&quot; Here&#x27;s the actual stack Seoul is running this year — and which layers travel.</p><div class="meta">The Glassy Seoul desk · 6 min · Jul 2026</div>
+<div class="prose"><p>"Glass skin" stopped being a filter and became a protocol. Walk into any Gangnam clinic in 2026 and you're not sold a cream — you're sold a <em>sequence</em>: a booster, a device, and a maintenance cadence. We broke down the stack that's actually being run, layer by layer, and flagged which parts are worth the flight and which you can do at home.</p>
+<h2>The stack, top to bottom</h2>
+<p><strong>1 — The base: barrier, not brightening.</strong> The single biggest shift from the 2021 whitening era is that Seoul now treats glass skin as a <em>barrier</em> project. PDRN/polynucleotide skin boosters (the Rejuran family) are the anchor — hydration and a viscoelastic scaffold, not a bleach. This is the layer with the most real evidence behind it.</p>
+<p><strong>2 — The glow: microdroplet injectables.</strong> "Skin boosters" delivered by multi-needle guns — hyaluronic microdroplets, salmon-DNA, the occasional exosome add-on. High satisfaction, thin long-term data. The honest read: real but incremental, and priced at a premium the evidence doesn't fully earn.</p>
+<p><strong>3 — The tightening: energy devices.</strong> HIFU (Shrink, Ultraformer) and RF microneedling for the "lifted glass" finish. Works for early laxity; oversold as a facelift. (Full teardown in <em>The Treatment</em>.)</p>
+<p><strong>4 — The maintenance: cadence, not heroics.</strong> The part tourists miss. Seoul's results come from <em>frequency</em> — monthly low-dose upkeep — not one dramatic session. This is the layer that does not travel: you can't fly in quarterly and match a local's cadence.</p>
+<h2>What travels, what doesn't</h2>
+<table>
+<thead>
+<tr>
+<th>Layer</th>
+<th>Fly to Seoul?</th>
+<th>Do at home?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>PDRN / PN boosters</td>
+<td>✅ price + access</td>
+<td>⚠️ limited outside Korea/Asia</td>
+</tr>
+<tr>
+<td>Microdroplet glow</td>
+<td>➖ nice-to-have</td>
+<td>✅ many markets</td>
+</tr>
+<tr>
+<td>Energy tightening</td>
+<td>✅ device range + price</td>
+<td>✅ if a good operator</td>
+</tr>
+<tr>
+<td>Maintenance cadence</td>
+<td>❌ can't outsource</td>
+<td>✅ this is the real work</td>
+</tr>
+</tbody>
+</table>
+<h2>The verdict</h2>
+<p>Glass skin is a maintenance habit wearing a treatment's clothes. The boosters and devices are real; the transformation is the cadence. If you're flying in, buy the layers that are cheaper and better-accessed in Seoul (PDRN, device range) — and build the cadence at home, because that's the layer no clinic can sell you.</p>
+<p><em>Prices and treatment availability are indicative, as of Jul 2026, and vary by market. Educational — not medical advice.</em></p></div></article>
+<section class="member" id="member" style="max-width:720px;margin:30px auto"><div class="rib">Membership</div>
+<h2>Read the full Dispatch</h2><p>Members get the weekly issue, the Verdict archive, and the Seoul City Guides.</p>
+<div class="price">$8 / month · $70 / year</div><form class="cap" data-list="circle"><input type="email" required placeholder="you@email.com" aria-label="Email"><button type="submit">Become a member</button><div class="cap-ok" role="status" hidden>You’re in — watch your inbox.</div></form></section>
+<p class="disc"><a href="./index.html" style="color:var(--red)">← The current issue</a> &nbsp;·&nbsp; Educational information, not medical advice. No specific clinic promotion. Prices indicative as of Jul 2026.</p>
+<footer class="foot"><div class="wrap">Educational information, not medical advice. No specific clinic promotion. Prices indicative as of Jul 2026.</div></footer>
+
+<div class="cbar">Concept prototype · reverse-engineered design & business model · <a href="./index.html">← compare all three</a></div>
+<script>document.querySelectorAll('form.cap').forEach(function(f){f.addEventListener('submit',function(e){e.preventDefault();var i=f.querySelector('input');if(!i.checkValidity()){i.reportValidity();return;}try{var k='glassy:'+(f.dataset.list||'x'),a=JSON.parse(localStorage.getItem(k)||'[]');a.push({e:i.value.trim(),t:Date.now()});localStorage.setItem(k,JSON.stringify(a));}catch(_){}f.querySelectorAll('input,button').forEach(function(el){el.style.display='none';});var ok=f.querySelector('.cap-ok');if(ok)ok.hidden=false;});});</script></body></html>
