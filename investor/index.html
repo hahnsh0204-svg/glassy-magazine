@@ -1,0 +1,157 @@
+<!DOCTYPE html><html lang="en"><head>
+<meta charset="utf-8"><meta name="robots" content="noindex, nofollow"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Glassy — Investor Memo</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#faf6f0;--panel:#ffffff;--panel2:#f3ecdf;--ink:#262635;--muted:#5a5a6a;--muted2:#8a8a96;--border:#e6ddcd;--border2:#d8ccb6;--accent:#c22e28;--accent2:#d8453f;--accent-soft:rgba(194,46,40,.08);--on-accent:#ffffff;--c2:#2b3a67;--c3:#c98a2b;--c4:#7a8a5a;--serif:"Playfair Display",Georgia,serif;--sans:"Inter",-apple-system,sans-serif;--maxw:1080px;}
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased;}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 28px;}
+*{box-sizing:border-box;}
+h1,h2,h3,h4{font-family:var(--serif);font-weight:600;letter-spacing:-.02em;margin:0;}
+a{color:var(--accent);text-decoration:none;}
+.eyebrow{font-family:var(--sans);font-weight:800;font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--accent);}
+.sec{padding:64px 0;border-top:1px solid var(--border);}
+.sec-n{font-family:var(--sans);font-weight:800;font-size:12.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted2);margin-bottom:10px;}
+.sec h2{font-size:clamp(26px,3.4vw,38px);line-height:1.1;margin-bottom:14px;}
+.sec .lead{font-size:18px;color:var(--muted);max-width:70ch;margin:0 0 28px;}
+.sec .lead b,.sec .lead strong{color:var(--ink);}
+.top{position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--border);}
+.top .wrap{display:flex;align-items:center;gap:16px;height:60px;}
+.top .bm{font-family:var(--sans);font-weight:800;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted2);}
+.top .wm{font-family:var(--serif);font-weight:700;font-size:19px;color:var(--ink);}
+.top .wm b{color:var(--accent);}
+.top .sp{flex:1;}
+.top .lk{font-size:13.5px;font-weight:700;color:var(--accent);border:1px solid var(--border2);padding:8px 14px;border-radius:999px;}
+.top .lk:hover{border-color:var(--accent);}
+.hero{padding:66px 0 8px;position:relative;overflow:hidden;}
+.hero .eyebrow{margin-bottom:16px;display:inline-block;}
+.hero h1{font-size:clamp(34px,5.4vw,58px);line-height:1.04;max-width:20ch;margin-bottom:18px;}
+.hero h1 em{font-style:normal;color:var(--accent);}
+.hero .sub{font-size:20px;color:var(--muted);max-width:62ch;margin:0 0 26px;}
+.hero .metarow{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:34px;}
+.hero .chip{font-size:13px;font-weight:600;color:var(--ink);background:var(--panel);border:1px solid var(--border);border-radius:999px;padding:8px 14px;}
+.hero .chip b{color:var(--accent);}
+.hstats{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;padding:26px 0 8px;border-top:1px solid var(--border);}
+.hstat .hv{font-family:var(--serif);font-weight:700;font-size:34px;color:var(--ink);line-height:1;letter-spacing:-.02em;}
+.hstat .hl{font-size:13.5px;color:var(--muted);margin-top:8px;}
+.blist{margin:0;padding:0;list-style:none;display:grid;gap:12px;max-width:76ch;}
+.blist li{position:relative;padding-left:26px;color:var(--ink);font-size:16.5px;line-height:1.55;}
+.blist li::before{content:"";position:absolute;left:2px;top:9px;width:9px;height:9px;border-radius:3px;background:var(--accent);}
+.fcards{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;}
+.fcard{background:var(--panel);border:1px solid var(--border);border-radius:14px;padding:22px;}
+.fcard h4{font-size:18px;margin-bottom:8px;color:var(--ink);}
+.fcard p{margin:0;color:var(--muted);font-size:14.5px;line-height:1.55;}
+.note{font-size:13px;color:var(--muted2);margin-top:18px;max-width:74ch;}
+.grid2{display:grid;grid-template-columns:1.15fr .85fr;gap:40px;align-items:start;}
+.market{display:grid;gap:20px;max-width:720px;}
+.mkt-head{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:7px;}
+.mkt-tier{font-family:var(--sans);font-weight:800;font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);}
+.mkt-val{font-family:var(--serif);font-weight:700;font-size:22px;color:var(--ink);}
+.mkt-track{height:16px;background:var(--panel2);border-radius:8px;overflow:hidden;}
+.mkt-fill{height:100%;border-radius:8px;}
+.mkt-desc{font-size:13.5px;color:var(--muted);margin-top:7px;}
+.barchart{display:flex;gap:22px;align-items:flex-end;padding:12px 0 0;min-height:230px;}
+.bar-col{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;text-align:center;}
+.bar-val{font-family:var(--serif);font-weight:700;font-size:17px;color:var(--ink);margin-bottom:8px;}
+.bar-track{width:100%;display:flex;align-items:flex-end;justify-content:center;height:176px;}
+.bar-fill{width:64%;max-width:78px;border-radius:6px 6px 2px 2px;}
+.stack{width:64%;max-width:78px;display:flex;flex-direction:column;justify-content:flex-end;height:190px;gap:2px;}
+.stack .seg{border-radius:3px;}
+.stack .seg:first-child{border-radius:6px 6px 3px 3px;}
+.bar-lab{font-size:13.5px;font-weight:700;color:var(--ink);margin-top:10px;}
+.bar-cap{font-size:12px;color:var(--muted);margin-top:3px;}
+.legend{display:flex;flex-wrap:wrap;gap:16px;margin-top:20px;justify-content:center;}
+.lg{font-size:13px;color:var(--muted);display:flex;align-items:center;gap:7px;}
+.lg i{width:11px;height:11px;border-radius:3px;display:inline-block;}
+.funnel{display:grid;gap:12px;max-width:760px;}
+.fn-row{display:grid;grid-template-columns:150px 1fr 160px;gap:14px;align-items:center;}
+.fn-lab{font-size:14px;font-weight:700;color:var(--ink);text-align:right;}
+.fn-barwrap{background:var(--panel2);border-radius:8px;overflow:hidden;}
+.fn-bar{height:38px;border-radius:8px;display:flex;align-items:center;padding:0 14px;color:var(--on-accent);font-weight:800;font-size:14px;min-width:44px;}
+.fn-note{font-size:12.5px;color:var(--muted);}
+.flywheel{position:relative;width:300px;height:300px;margin:8px auto;}
+.fw-ring{position:absolute;inset:0;width:100%;height:100%;}
+.fw-node{position:absolute;transform:translate(-50%,-50%);width:132px;text-align:center;}
+.fw-num{display:inline-grid;place-items:center;width:26px;height:26px;border-radius:50%;background:var(--accent);color:var(--on-accent);font-weight:800;font-size:13px;margin-bottom:6px;}
+.fw-txt{display:block;font-size:12.5px;font-weight:600;color:var(--ink);line-height:1.35;}
+.timeline{position:relative;display:grid;grid-template-columns:repeat(4,1fr);gap:18px;padding-top:20px;}
+.tl-line{position:absolute;top:26px;left:6%;right:6%;height:2px;background:var(--border2);}
+.tl-cell{position:relative;}
+.tl-dot{width:14px;height:14px;border-radius:50%;background:var(--accent);border:3px solid var(--bg);position:relative;z-index:1;margin-bottom:14px;box-shadow:0 0 0 1px var(--accent);}
+.tl-q{font-family:var(--sans);font-weight:800;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);}
+.tl-title{font-weight:700;font-size:15px;color:var(--ink);margin:5px 0 8px;}
+.tl-cell ul{margin:0;padding-left:16px;color:var(--muted);font-size:13px;line-height:1.5;}
+.tl-cell li{margin:3px 0;}
+.tiles{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;}
+.tile{background:var(--panel);border:1px solid var(--border);border-radius:14px;padding:22px;}
+.tile-val{font-family:var(--serif);font-weight:700;font-size:30px;color:var(--accent);line-height:1;letter-spacing:-.02em;}
+.tile-lab{font-size:13.5px;font-weight:700;color:var(--ink);margin-top:10px;}
+.tile-note{font-size:12.5px;color:var(--muted);margin-top:5px;line-height:1.45;}
+.tierbox{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;}
+.tb{background:var(--panel);border:1px solid var(--border);border-radius:14px;padding:20px;display:flex;flex-direction:column;}
+.tb.hi{border-color:var(--accent);box-shadow:0 0 0 1px var(--accent);}
+.tb .tn{font-weight:800;font-size:13px;letter-spacing:.05em;text-transform:uppercase;color:var(--accent);}
+.tb .tp{font-family:var(--serif);font-weight:700;font-size:24px;color:var(--ink);margin:6px 0 4px;}
+.tb .tt{font-size:12.5px;color:var(--muted);margin-bottom:12px;min-height:32px;}
+.tb ul{margin:0;padding-left:16px;font-size:13px;color:var(--muted);line-height:1.55;}
+.tablewrap{overflow-x:auto;border:1px solid var(--border2);border-radius:12px;}
+table.comp{width:100%;border-collapse:collapse;font-size:14px;min-width:640px;}
+table.comp th{background:var(--panel2);text-align:left;padding:12px 14px;font-weight:700;color:var(--ink);border-bottom:1px solid var(--border2);}
+table.comp td{padding:12px 14px;border-bottom:1px solid var(--border);color:var(--muted);vertical-align:top;line-height:1.45;}
+table.comp td b{color:var(--ink);}
+table.comp tr.us td{background:var(--accent-soft);color:var(--ink);}
+table.comp tr.us td b{color:var(--accent);}
+table.comp tr:last-child td{border-bottom:none;}
+.ask{background:var(--panel);border:1px solid var(--border2);border-radius:20px;padding:44px;}
+.ask h2{font-size:clamp(24px,3vw,34px);margin-bottom:14px;}
+.ask .lead{color:var(--muted);}
+.foot{padding:40px 0 60px;border-top:1px solid var(--border);color:var(--muted2);font-size:12.5px;line-height:1.6;}
+.foot .fl{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:14px;}
+.foot .fl a{font-weight:700;}
+@media(max-width:860px){
+  .grid2{grid-template-columns:1fr;gap:24px;}
+  .hstats,.tiles,.tierbox{grid-template-columns:1fr 1fr;}
+  .fcards{grid-template-columns:1fr;}
+  .timeline{grid-template-columns:1fr 1fr;}.tl-line{display:none;}
+  .fn-row{grid-template-columns:110px 1fr;}.fn-note{display:none;}
+}
+@media(max-width:520px){.hstats,.tiles,.tierbox,.timeline{grid-template-columns:1fr;}}
+@media print{.top{position:static;}.sec{break-inside:avoid;}}
+</style></head><body class="glassymag">
+<header class="top"><div class="wrap">
+<span class="bm">Investor Memo</span><span class="wm"><b>Glassy</b></span><span class="sp"></span>
+<a class="lk" href="https://hahnsh0204-svg.github.io/glassy-magazine/" target="_blank" rel="noopener">hahnsh0204-svg.github.io/glassy-magazine ↗</a>
+</div></header>
+
+<section class="hero"><div class="wrap">
+<span class="eyebrow">Investor Memo · K-Beauty &amp; Derm Trend Media</span>
+<h1>The Seoul-native trend desk for the world’s <em>K-beauty</em> obsession.</h1>
+<p class="sub">Korean beauty & dermatology are in a global demand super-cycle — yet no one gives US / 日本 / 中文 audiences a premium, taste-driven, multi-market guide to what’s actually trending in Seoul right now. Fast, tasteful, MD-checked.</p>
+<div class="metarow"><span class="chip"><b>Stage:</b> Bootstrapped media</span><span class="chip"><b>Model:</b> Ads + commerce + membership + referral</span><span class="chip"><b>Geo:</b> US / 日本 / 中文</span></div>
+<div class="hstats"><div class="hstat"><div class="hv">$10.2B</div><div class="hl">Korea cosmetics exports 2024 (+20.3% YoY)</div></div><div class="hstat"><div class="hv">1.17M</div><div class="hl">Foreign medical tourists — 56.6% dermatology</div></div><div class="hstat"><div class="hv">~$965K</div><div class="hl">Illustrative Yr-3 revenue — solo + AI, bootstrapped</div></div></div>
+</div></section>
+
+<section class="sec"><div class="wrap"><div class="sec-n">01 · Problem</div><h2>Seoul sets the trend; the world finds out late.</h2><p class="lead">The demand is here — the <b>curated, tasteful guide</b> is not.</p><ul class='blist'><li><b>K-beauty is in a global super-cycle.</b> Korea’s cosmetics exports hit a record $10.2B in 2024 (+20.3%); it overtook France as the #1 US beauty import; it’s been #1 in Japan for three years.</li><li><b>The derm angle is a boom.</b> Korea drew 1.17M foreign patients in 2024 — dermatology the #1 specialty at 56.6% — with Japan + China 60% of them. Medical tourism is a decision most people make blind.</li><li><b>Discovery is late, fragmented, untranslated.</b> What trends in Seoul (Olive Young, clinic menus, Xiaohongshu — 300M MAU, 87% beauty discovery) reaches the West slowly and in pieces.</li><li><b>No premium, multi-market trend guide exists.</b> The audience gets crowd anecdote, mass SEO, or influencers — not a Seoul-native magazine with taste and an MD trust layer.</li></ul></div></section>
+<section class="sec"><div class="wrap"><div class="sec-n">02 · Solution</div><h2>A premium magazine for what Seoul is doing now.</h2><p class="lead">Six desks turn fast, tasteful trend curation into a repeatable product — with a light MD ‘Verdict’ and a medical-tourism decision layer.</p><div class='fcards'><div class='fcard'><h4>Trend Radar</h4><p>The ‘렉카’ core: what’s blowing up in Seoul this week — products, ingredients, looks, clinic menus — with a taste-filtered should-you-care rating.</p></div><div class='fcard'><h4>The Treatment</h4><p>Derm &amp; procedures explained — lasers, injectables, exosomes, boosters — with the light MD ‘Verdict’ seal.</p></div><div class='fcard'><h4>The Shelf</h4><p>Product edits &amp; dupes — shoppable, tasteful, curated not exhaustive.</p></div><div class='fcard'><h4>Seoul Dispatch</h4><p>On-the-ground reporting — Olive Young drops, Seongsu pop-ups, clinic culture. The Seoul-native moat.</p></div><div class='fcard'><h4>The Verdict</h4><p>Marketing claim vs. actual evidence, MD-checked, one paragraph — the credibility garnish.</p></div><div class='fcard'><h4>City Guides</h4><p>The medical-tourism decision layer: Seoul clinic guides, price bands, what to book — the differentiator.</p></div></div><p class="note">MD credibility is a light trust layer on a beauty magazine, never the main course. The moat is Seoul-native sourcing + taste + the decision layer.</p></div></section>
+<section class="sec"><div class="wrap"><div class="sec-n">03 · Why now / Moat</div><h2>Why now, and why it’s defensible.</h2><div class="grid2"><div><ul class='blist'><li><b>The super-cycle is now.</b> Record exports, US #1, Japan #1, a medical-tourism boom, and a billionaire minted on the Rejuran run — the English/JP/CN audience for exactly this subject is expanding fast.</li><li><b>Discovery is the scarce good.</b> Xiaohongshu proves curated discovery — not raw product — is what beauty buyers pay attention to; someone has to translate Seoul with taste.</li><li><b>Solo + AI makes a Seoul-native magazine viable.</b> AI-assisted production + one Seoul contributor now delivers a multi-market publication that used to need a newsroom.</li></ul></div><div class="fcard"><h4>The moat</h4><p>This category exits — Highsnobiety→Zalando, Byrdie→Dotdash, Dazed runs a studio + membership. But Seoul-native sourcing + a taste-driven premium voice + a light MD trust layer + a medical-tourism decision layer is a position none of the incumbents hold. Own the newsletter and membership as the durable, platform-independent asset.</p></div></div></div></section>
+<section class="sec"><div class="wrap"><div class="sec-n">04 · Market</div><h2>A huge spend, no premium multi-market guide.</h2><p class="lead">Glassy is a media / commerce business — sized on what its taste monetizes, not the category it informs.</p><div class="market"><div class="mkt-row"><div class="mkt-head"><span class="mkt-tier">TAM</span><span class="mkt-val">$1–2B</span></div><div class="mkt-track"><div class="mkt-fill" style="width:100%;background:#c22e28"></div></div><div class="mkt-desc">Monetizable media + affiliate + subscription value of the global English + JP + CN K-beauty audience (~1–3% of the commerce it influences) (est.).</div></div><div class="mkt-row"><div class="mkt-head"><span class="mkt-tier">SAM</span><span class="mkt-val">$50–150M</span></div><div class="mkt-track"><div class="mkt-fill" style="width:50%;background:#c22e28"></div></div><div class="mkt-desc">~10–15M reachable high-involvement readers × ~$5–15/yr blended (ads + commerce + membership). Beauty-influencer pool alone ~$4.5B (est.).</div></div><div class="mkt-row"><div class="mkt-head"><span class="mkt-tier">SOM (3-yr)</span><span class="mkt-val">~$0.9–1.2M/yr</span></div><div class="mkt-track"><div class="mkt-fill" style="width:18%;background:#c22e28"></div></div><div class="mkt-desc">A fraction of a percent of the native + affiliate + membership + referral pools — a solo + AI + contributor business (est.).</div></div></div><p class="note">Category Glassy <em>informs</em>: Korea cosmetics exports $10.2B (2024); US K-beauty $27.56B → $55.12B by 2032; and a medical-tourism referral pool of <b>$100M+</b> (705k foreign derm patients × ~$1–5k package × 10–20% facilitator fee).</p></div></section>
+<section class="sec"><div class="wrap"><div class="sec-n">05 · Competition</div><h2>Nobody owns the premium Seoul trend desk.</h2><p class="lead">Shops with blogs, mass SEO, streetwear trend media — and a taste-driven multi-market K-beauty magazine in none of them.</p><div class="tablewrap"><table class="comp"><thead><tr><th>Player</th><th>What it is</th><th>How it monetizes</th><th>The gap Glassy exploits</th></tr></thead><tbody><tr><td>Soko Glam / The Klog</td><td>US K-beauty <b>store</b> + blog (profitable)</td><td>Retail margin + own brands</td><td>A shop with a blog; US-centric; no premium trend magazine, no derm/tourism layer</td></tr><tr><td>Byrdie <em>(Dotdash)</em></td><td>SEO beauty service, ~5.5M UV</td><td>Display + affiliate</td><td>Mass / service-y, not premium-editorial; not K-specialist; no Seoul sourcing</td></tr><tr><td>Dazed Beauty <em>(~$43M)</em></td><td>Edgy culture-beauty; Dazed Korea</td><td>Brand studio + membership</td><td>Avant-garde, not tasteful-premium service; Korea vertical is local, not packaged for global</td></tr><tr><td>Hypebae / Hypebeast <em>(HK$895M)</em></td><td>Women’s trend vertical</td><td>Media ads + commerce (HBX)</td><td>Hype / streetwear register, not premium beauty/derm; no MD or tourism layer</td></tr><tr><td>Highsnobiety <em>(&gt;$60M, Zalando)</em></td><td>Editorial→commerce engine</td><td>Native + e-commerce + consulting</td><td>Proves the <b>model</b> — not beauty-native; the playbook Glassy ports</td></tr><tr><td>Air Mail <em>(~$15M)</em></td><td>Premium curated weekly</td><td>Membership + luxury ads</td><td>Proves premium membership works — not K-beauty, not Seoul-native</td></tr><tr class="us"><td>★ Glassy</td><td>Seoul-native K-beauty & derm trend magazine</td><td>Ads + commerce + membership + referral</td><td><b>The only premium, multi-market, MD-checked Seoul trend desk with a tourism decision layer</b></td></tr></tbody></table></div><p class="note">Three of the eight got acquired or scaled to eight figures — a category with real exits. Glassy fuses their proven design + revenue engines onto a Seoul-native, K-beauty-specialist position none of them hold.</p></div></section>
+<section class="sec"><div class="wrap"><div class="sec-n">06 · Business model</div><h2>Three proven engines — built, live, pick one to lead.</h2><p class="lead">Each concept clones the design <b>and</b> business model of a different successful business; the medical-tourism decision layer is the differentiator none of them have.</p><div class="tierbox"><div class="tb"><div class="tn">The Edit</div><div class="tp">Commerce</div><div class="tt">Soko Glam / The Klog model</div><ul><li>Curated shop + affiliate</li><li>Own edits</li><li>Product-forward</li></ul></div><div class="tb hi"><div class="tn">The Radar</div><div class="tp">Brand studio</div><div class="tt">Hypebae / Hypebeast model</div><ul><li>Labeled native / sponsorship</li><li>Trend velocity</li><li>Commerce / store</li></ul></div><div class="tb"><div class="tn">The Dispatch</div><div class="tp">Membership</div><div class="tt">Air Mail model</div><ul><li>$70/yr membership</li><li>Luxury advertising</li><li>Shop-as-editorial</li></ul></div><div class="tb"><div class="tn">City Guides</div><div class="tp">Referral</div><div class="tt">The differentiator</div><ul><li>Medical-tourism decision layer</li><li>7.5–30% facilitator fee</li><li>KHIDI-registered, disclosed</li></ul></div></div><p class="note">All three concepts are built and live in the gallery — the pitch is that the revenue engine is a choice, and the medical-tourism referral layer stacks on any of them.</p></div></section>
+<section class="sec"><div class="wrap"><div class="sec-n">07 · Unit economics</div><h2>Media margins, organic reach, stacked streams.</h2><div class="tiles"><div class="tile"><div class="tile-val">~85%</div><div class="tile-lab">Contribution margin</div><div class="tile-note">AI-assisted production, no print</div></div><div class="tile"><div class="tile-val">$12–20</div><div class="tile-lab">Premium beauty CPM</div><div class="tile-note">North America 30–50% higher (est.)</div></div><div class="tile"><div class="tile-val">10–30%</div><div class="tile-lab">Affiliate commission</div><div class="tile-note">ShopMy / LTK on evidence-passed picks</div></div><div class="tile"><div class="tile-val">~$450</div><div class="tile-lab">Referral / patient</div><div class="tile-note">Tourism facilitator, ~15% of package</div></div></div><p class="note">Blended ARPU stacks four streams per reader — ads, commerce, membership, and a high-value medical-tourism referral — so the free majority monetizes, not only the paying slice. Native packages command far more than programmatic (Air Mail ~$55k/placement).</p></div></section>
+<section class="sec"><div class="wrap"><div class="sec-n">08 · Growth engine</div><h2>Trend velocity is the growth loop.</h2><p class="lead">The over-claim / trend alert is inherently shareable — and it recruits the next reader.</p><div class="grid2"><div><div class="flywheel"><svg class="fw-ring" viewBox="0 0 200 200" fill="none"><circle cx="100" cy="100" r="70" stroke="#c22e28" stroke-width="2" stroke-dasharray="6 7" opacity="0.55"/><path d="M100 30 A70 70 0 0 1 170 100" stroke="#c22e28" stroke-width="3" marker-end="url(#ah)"/><defs><marker id="ah" markerWidth="9" markerHeight="9" refX="5" refY="4" orient="auto"><path d="M0 0L8 4L0 8z" fill="#c22e28"/></marker></defs></svg><div class="fw-node" style="left:50%;top:4%"><span class="fw-num">1</span><span class="fw-txt">Publish a taste-filtered Seoul trend read</span></div><div class="fw-node" style="left:94%;top:50%"><span class="fw-num">2</span><span class="fw-txt">It’s shared on Reddit / short-form / Xiaohongshu</span></div><div class="fw-node" style="left:50%;top:96%"><span class="fw-num">3</span><span class="fw-txt">Free audience grows; a slice buys / joins</span></div><div class="fw-node" style="left:6%;top:50%"><span class="fw-num">4</span><span class="fw-txt">Revenue funds Seoul sourcing → sharper trends</span></div></div></div><div><div class='fcards'><div class='fcard'><h4>Seoul-native sourcing</h4><p>Olive Young, clinic menus, Xiaohongshu — translated with taste for a global audience. The moat competitors can’t fake.</p></div><div class='fcard'><h4>Short-form trend alerts</h4><p>‘What Seoul is booking this quarter’ is a scroll-stopping, multi-market format for Reels / TikTok / 小红书.</p></div><div class='fcard'><h4>SEO evergreen</h4><p>‘Does HIFU work’, ‘exosome facial worth it’ rank and compound — owned, non-platform traffic.</p></div><div class='fcard'><h4>Newsletter + membership</h4><p>The durable, platform-independent asset — free digest converts into the Circle.</p></div></div></div></div></div></section>
+<section class="sec"><div class="wrap"><div class="sec-n">09 · Financial projection</div><h2>Illustrative path to ~$965K revenue.</h2><p class="lead">Bootstrapped, solo + AI + one Seoul contributor. Multi-stream; media-model comps run $15M–$60M+.</p><div class="barchart stacked"><div class="bar-col"><div class="bar-val">$58,000</div><div class="stack"><div class="seg" style="height:2px;background:#7a8a5a" title="Membership + referral + events: $10,000"></div><div class="seg" style="height:1px;background:#c98a2b" title="Affiliate / commerce: $8,000"></div><div class="seg" style="height:6px;background:#2b3a67" title="Brand studio / native: $30,000"></div><div class="seg" style="height:2px;background:#c22e28" title="Display / programmatic: $10,000"></div></div><div class="bar-lab">Year 1</div></div><div class="bar-col"><div class="bar-val">$415,000</div><div class="stack"><div class="seg" style="height:29px;background:#7a8a5a" title="Membership + referral + events: $155,000"></div><div class="seg" style="height:9px;background:#c98a2b" title="Affiliate / commerce: $50,000"></div><div class="seg" style="height:28px;background:#2b3a67" title="Brand studio / native: $150,000"></div><div class="seg" style="height:11px;background:#c22e28" title="Display / programmatic: $60,000"></div></div><div class="bar-lab">Year 2</div></div><div class="bar-col"><div class="bar-val">$965,000</div><div class="stack"><div class="seg" style="height:66px;background:#7a8a5a" title="Membership + referral + events: $355,000"></div><div class="seg" style="height:24px;background:#c98a2b" title="Affiliate / commerce: $130,000"></div><div class="seg" style="height:62px;background:#2b3a67" title="Brand studio / native: $330,000"></div><div class="seg" style="height:28px;background:#c22e28" title="Display / programmatic: $150,000"></div></div><div class="bar-lab">Year 3</div></div></div><div class="legend"><span class="lg"><i style="background:#c22e28"></i>Display / programmatic</span><span class="lg"><i style="background:#2b3a67"></i>Brand studio / native</span><span class="lg"><i style="background:#c98a2b"></i>Affiliate / commerce</span><span class="lg"><i style="background:#7a8a5a"></i>Membership + referral + events</span></div><p class="note">Illustrative. Monthly uniques 50k→250k→800k; newsletter 6k→22k→50k. Blended programmatic RPM ~$12; native package ~$15k; affiliate ~10%; membership $70/yr; referral ~$450/patient. Solo + AI + one Seoul contributor cost base.</p></div></section>
+<section class="sec"><div class="wrap"><div class="sec-n">10 · Roadmap</div><h2>The next four quarters.</h2><p class="lead">From three live concepts to a monetized, multi-market magazine.</p><div class="timeline"><div class="tl-line"></div><div class="tl-cell"><div class="tl-dot"></div><div class="tl-q">Q3 2026</div><div class="tl-title">Build &amp; seed</div><ul><li>Ship the chosen concept + 6 desks</li><li>20 Trend Radar pieces + newsletter</li><li>1 MD reviewer for The Verdict</li></ul></div><div class="tl-cell"><div class="tl-dot"></div><div class="tl-q">Q4 2026</div><div class="tl-title">Monetize</div><ul><li>Programmatic + affiliate on</li><li>Seoul sourcing / translation contributor</li><li>The Treatment SEO base</li></ul></div><div class="tl-cell"><div class="tl-dot"></div><div class="tl-q">Q1 2027</div><div class="tl-title">Brand studio</div><ul><li>First 2–3 native deals</li><li>10k newsletter subs</li><li>Seoul Dispatch flagship</li></ul></div><div class="tl-cell"><div class="tl-dot"></div><div class="tl-q">Q2 2027</div><div class="tl-title">Membership + JP/CN</div><ul><li>Launch membership ($70/yr)</li><li>JP + CN digests (CN social-first)</li><li>KHIDI-registered City Guides partners</li></ul></div></div></div></section>
+
+<section class="sec"><div class="wrap"><div class="ask">
+<div class="sec-n">11 · The ask</div><h2>Bootstrap a media brand — a raise is the exception, not the rule.</h2>
+<p class="lead">Content-commerce media is not a clean VC scale story: Highsnobiety raised ~$10.2M before a strategic exit; Air Mail’s $17M is the exception. Glassy is <b>profitable on affiliate + native + membership</b> at a solo + AI + one-contributor cost base.</p><ul class='blist'><li><b>Recommended: bootstrap</b> to profitability, keep the cost base lean, retain full control and editorial independence.</li><li><b>Optional strategic check ($150–300k)</b> only after the brand-studio and membership lines are proven — ideally from a beauty-commerce or medical-tourism strategic, not a growth fund.</li><li><b>The exit context:</b> this category is acquired — Highsnobiety→Zalando, Byrdie→Dotdash, and beauty/K-beauty strategics are hungry for a trusted, multi-market Seoul-native brand.</li></ul>
+</div></div></section>
+
+<footer class="foot"><div class="wrap">
+<div class="fl"><a href="https://hahnsh0204-svg.github.io/glassy-magazine/" target="_blank" rel="noopener">hahnsh0204-svg.github.io/glassy-magazine ↗</a></div>
+Illustrative investor memo for a prototype-stage project. Financials are assumptions, not forecasts; market figures are order-of-magnitude estimates. Glassy is educational information, NOT medical advice; no specific clinic is promoted; prices are indicative.
+</div></footer>
+</body></html>
