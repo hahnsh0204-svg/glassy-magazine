@@ -84,7 +84,7 @@ h1,h2,h3,h4,.brand,.btn,.eyebrow{font-family:"Poppins",sans-serif}
 <p>New K-beauty and derm trends, the honest picks, and where to shop them — weekly.</p><form class="cap" data-list="edit"><input type="email" required placeholder="you@email.com" aria-label="Email"><button type="submit">Get the Edit</button><div class="cap-ok" role="status" hidden>You’re in — watch your inbox.</div></form></section>
 </main>
 <footer class="foot"><div class="wrap"><span class="brand">Glassy<b style="color:var(--pink)">.</b></span>
-Concept 1 of 3 — modeled on the Soko Glam / The Klog playbook: editorial that curates the shelf, monetized by curated commerce & affiliate. Educational information, not medical advice. No specific clinic promotion. Prices indicative as of Jul 2026.</div></footer>
+Concept 1 of 4 — modeled on the Soko Glam / The Klog playbook: editorial that curates the shelf, monetized by curated commerce & affiliate. Educational information, not medical advice. No specific clinic promotion. Prices indicative as of Jul 2026.</div></footer>
 
-<div class="cbar">Concept prototype · reverse-engineered design & business model · <a href="./index.html">← compare all three</a></div>
+<div class="cbar">Concept prototype · reverse-engineered design & business model · <a href="./index.html">← compare all four</a></div>
 <script>document.querySelectorAll('form.cap').forEach(function(f){f.addEventListener('submit',function(e){e.preventDefault();var i=f.querySelector('input');if(!i.checkValidity()){i.reportValidity();return;}try{var k='glassy:'+(f.dataset.list||'x'),a=JSON.parse(localStorage.getItem(k)||'[]');a.push({e:i.value.trim(),t:Date.now()});localStorage.setItem(k,JSON.stringify(a));}catch(_){}f.querySelectorAll('input,button').forEach(function(el){el.style.display='none';});var ok=f.querySelector('.cap-ok');if(ok)ok.hidden=false;});});</script></body></html>

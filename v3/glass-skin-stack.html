@@ -110,5 +110,5 @@ h1,h2,h3,.disp{font-family:"Playfair Display",Georgia,serif}
 <p class="disc"><a href="./index.html" style="color:var(--red)">← The current issue</a> &nbsp;·&nbsp; Educational information, not medical advice. No specific clinic promotion. Prices indicative as of Jul 2026.</p>
 <footer class="foot"><div class="wrap">Educational information, not medical advice. No specific clinic promotion. Prices indicative as of Jul 2026.</div></footer>
 
-<div class="cbar">Concept prototype · reverse-engineered design & business model · <a href="./index.html">← compare all three</a></div>
+<div class="cbar">Concept prototype · reverse-engineered design & business model · <a href="./index.html">← compare all four</a></div>
 <script>document.querySelectorAll('form.cap').forEach(function(f){f.addEventListener('submit',function(e){e.preventDefault();var i=f.querySelector('input');if(!i.checkValidity()){i.reportValidity();return;}try{var k='glassy:'+(f.dataset.list||'x'),a=JSON.parse(localStorage.getItem(k)||'[]');a.push({e:i.value.trim(),t:Date.now()});localStorage.setItem(k,JSON.stringify(a));}catch(_){}f.querySelectorAll('input,button').forEach(function(el){el.style.display='none';});var ok=f.querySelector('.cap-ok');if(ok)ok.hidden=false;});});</script></body></html>
